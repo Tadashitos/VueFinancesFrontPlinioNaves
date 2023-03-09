@@ -1,0 +1,11 @@
+#import '@/modules/auth/graphql/UserFragment.gql'
+
+fragment CategoryFragment on Category {
+    id
+    description
+    operation
+    user {
+        ...UserFragment
+    }
+}
+
